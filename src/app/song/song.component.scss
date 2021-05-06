@@ -1,0 +1,21 @@
+ion-card-header {
+  display:flex;
+}
+
+ion-card-title, 
+ion-card-subtitle{
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.odd {
+  background-color: blue;
+}
+.even {
+  background-color: green;
+}
+
+.white {
+  color: white;
+}

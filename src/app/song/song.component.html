@@ -1,1 +1,10 @@
-<p>I'm a component</p>
+<ion-card [ngClass]="(position % 2 == 0) ? 'odd' : 'even'">
+  <ion-card-header>
+    <img [src]="currentSong.artworkUrl100"/>
+    <ion-card-title class="white">{{currentSong.artistName}}</ion-card-title>
+    <ion-card-subtitle class="white">{{currentSong.trackName}}</ion-card-subtitle>
+  </ion-card-header>
+  <ion-card-content class="white">
+    {{currentSong.trackPrice|currency:"USD"}}
+  </ion-card-content>
+</ion-card>
